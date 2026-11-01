@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CleanRide | Clean Cars, Greener Tomorrow</title>
+  <meta name="description" content="Discover eco-friendly car wash services with CleanRide.">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="header">
+    <a href="#home" class="logo"><span>✿</span> Clean<span>Ride</span></a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation"
+      aria-expanded="false">☰</button>
+
+    <nav class="nav" id="nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">CLEANER CARS · GREENER TOMORROW</p>
+        <h1>Keep Your Ride<br>Clean &amp; <span>Green</span></h1>
+        <p class="hero-text">
+          Find eco-friendly car wash services near you.
+          Save water, support the environment, and keep
+          your vehicle looking its best.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#booking" class="btn btn-primary">Find a Car Wash →</a>
+          <a href="#about" class="btn btn-outline">Learn More</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="Clean car illustration">
+        <div class="sun"></div>
+        <div class="wash-icon">💧</div>
+        <div class="car-emoji">🚘</div>
+        <div class="eco-label">🌿 Eco-friendly cleaning</div>
+      </div>
+    </section>
+
+    <section class="features section" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">WHY CLEANRIDE?</p>
+        <h2>Better for your car. Better for the planet.</h2>
+        <p>Car care made easy, convenient, and eco-conscious.</p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <div class="feature-icon green">🌿</div>
+          <h3>Eco-Friendly</h3>
+          <p>Support water conservation and sustainable practices.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon blue">📍</div>
+          <h3>Find Nearby</h3>
+          <p>Explore car wash options in your preferred area.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon purple">✓</div>
+          <h3>Simple &amp; Reliable</h3>
+          <p>Compare available services before you choose.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon orange">⏱</div>
+          <h3>Save Time</h3>
+          <p>Find the right service without unnecessary hassle.</p>
+        </article>
+      </div>
+    </section>
+
+    
+<section class="packages section" id="packages">
+  <div class="section-heading">
+    <p class="eyebrow">OUR SERVICES</p>
+    <h2>Choose Your Perfect Wash</h2>
+    <p>Simple packages for a cleaner ride.</p>
+  </div>
+
+  <div class="package-grid">
+    <article class="package-card">
+      <div class="package-icon">🚗</div>
+      <h3>Basic Wash</h3>
+      <p class="package-description">A quick refresh for your vehicle.</p>
+      <p class="package-price">PKR 500 <span>/ wash</span></p>
+      <ul>
+        <li>✓ Exterior cleaning</li>
+        <li>✓ Wheel cleaning</li>
+        <li>✓ Quick rinse</li>
+      </ul>
+      <button class="btn btn-outline choose-service"
+        data-service="Basic Wash">Choose Basic</button>
+    </article>
+
+    <article class="package-card package-featured">
+      <span class="popular-label">POPULAR CHOICE</span>
+      <div class="package-icon">✨</div>
+      <h3>Premium Wash</h3>
+      <p class="package-description">Extra care inside and out.</p>
+      <p class="package-price">PKR 1,000 <span>/ wash</span></p>
+      <ul>
+        <li>✓ Everything in Basic</li>
+        <li>✓ Interior cleaning</li>
+        <li>✓ Dashboard wipe</li>
+      </ul>
+      <button class="btn btn-primary choose-service"
+        data-service="Premium Wash">Choose Premium</button>
+    </article>
+
+    <article class="package-card">
+      <div class="package-icon">🌿</div>
+      <h3>Eco Wash</h3>
+      <p class="package-description">A water-conscious cleaning option.</p>
+      <p class="package-price">PKR 800 <span>/ wash</span></p>
+      <ul>
+        <li>✓ Water-conscious method</li>
+        <li>✓ Exterior cleaning</li>
+        <li>✓ Eco-focused approach</li>
+      </ul>
+      <button class="btn btn-outline choose-service"
+        data-service="Eco Wash">Choose Eco</button>
+    </article>
+  </div>
+
+  <p class="demo-note">
+    Demo prices for this project only. Actual services and prices may vary.
+  </p>
+</section>
+
+    <section class="booking section" id="booking">
+      <div class="section-heading">
+        <p class="eyebrow">START YOUR SEARCH</p>
+        <h2>Find Your Perfect Car Wash</h2>
+        <p>Enter your area and choose the service you need.</p>
+      </div>
+
+      <form id="searchForm" class="search-form">
+        <label>
+          Your area
+          <input type="text" id="location" placeholder="e.g. Umerkot" required>
+        </label>
+
+        <label>
+          Car wash service
+          <select id="service" required>
+            <option value="">Select a service</option>
+            <option value="Basic Wash">Basic Wash</option>
+            <option value="Premium Wash">Premium Wash</option>
+            <option value="Eco Wash">Eco Wash</option>
+            <option value="Interior Cleaning">Interior Cleaning</option>
+          </select>
+        </label>
+
+        <button type="submit" class="btn btn-primary">Search Services</button>
+      </form>
+      
+<div id="providerResults" class="provider-grid"></div>
+
+
+            <p id="searchResult" class="search-result" role="status"></p>
+    </section>
+
+    <!-- My Bookings Section -->
+    <section class="my-bookings section" id="myBookings">
+      <div class="section-heading">
+        <p class="eyebrow">YOUR BOOKINGS</p>
+        <h2>My Bookings</h2>
+        <p>View your previously submitted car wash bookings.</p>
+      </div>
+
+      <div id="myBookingsList" class="bookings-grid">
+        <p>No bookings found yet.</p>
+      </div>
+    </section>
+
+    <section class="contact section" id="services">
+      <p class="eyebrow">CLEANER CHOICES START HERE</p>
+      <h2>Ready to give your car some care?</h2>
+      <p>Explore your options and make your next wash a greener one.</p>
+      <a href="#booking" class="btn btn-primary">Get Started →</a>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <a href="#home" class="logo">Clean<span>Ride</span></a>
+    <p>Cleaner cars, greener tomorrow.</p>
+    <p class="copyright">© <span id="year"></span> CleanRide. Built with care.</p>
+  </footer>
+
+  <!-- CleanRide Booking Modal -->
+<div id="bookingModal" class="booking-modal" hidden>
+    <div class="booking-form-container">
+        <button type="button" id="closeBooking" class="close-booking"
+            aria-label="Close booking form">&times;</button>
+
+        <h2>Book a Cleaning Service</h2>
+        <p>Enter your details to request a booking.</p>
+
+        <form id="bookingForm">
+            <label for="providerName">Selected Provider</label>
+            <input type="text" id="providerName" readonly required>
+
+            <label for="bookingService">Service</label>
+            <input type="text" id="bookingService" readonly required>
+            
+            <label for="bookingPrice">Price</label>
+            <input type="text" id="bookingPrice" readonly>
+
+            <label for="customerName">Your Name</label>
+            <input type="text" id="customerName"
+                placeholder="Enter your full name" required>
+
+            <label for="customerPhone">Phone Number</label>
+            <input type="tel" id="customerPhone"
+                placeholder="Enter your phone number"
+                pattern="[0-9+\-\s()]{7,20}" required>
+
+            <label for="bookingDate">Booking Date</label>
+            <input type="date" id="bookingDate" required>
+
+            <label for="bookingTime">Preferred Time</label>
+            <input type="time" id="bookingTime" required>
+
+            <label for="bookingAddress">Your Address</label>
+            <textarea id="bookingAddress"
+                placeholder="Enter your service address"
+                rows="3" required></textarea>
+
+            <button type="submit" class="submit-booking-btn">
+                Confirm Booking Request
+            </button>
+
+            <p id="bookingMessage" role="status" aria-live="polite"></p>
+        </form>
+    </div>
+</div>
+<div id="bookingSuccess" class="booking-success" style="display: none;">
+    <h3>Booking Successful!</h3>
+    <p id="bookingSuccessMessage"></p>
+</div>
+</body>
+</html>
